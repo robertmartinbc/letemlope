@@ -2,12 +2,15 @@
 <html>
 <head>
   <title>Letemlope</title>
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 	<div class="container">
+		<%= image_tag("facebook@2xsmall.png") %>
 		<ul class="nav nav-tabs">
 			<li><%= link_to "Home", root_path %></li>
 			<li><%= link_to "Services", static_pages_services_path %></li>
@@ -17,10 +20,26 @@
 			<li><%= link_to "About", static_pages_about_path %></li>
 			<li><%= link_to "Contact", static_pages_contact_path %></li>
 		</ul>
-	</div>
 
+		<div class="row">
+  		<div class="span12">
+    		<div class="span10">
+      		<p><%= Time.now.strftime('%d %B, %Y')%></p>
+    		</div>
+    		<div class="span0">
+      		<a href="https://www.facebook.com/LELperformanceHorsesLLP" target="_blank"><i class="icon-facebook-sign icon-4x"></i></a>
+    		</div>
+    		<div class="span0">
+      		<a href="#" target="_blank"><i class="icon-twitter icon-4x"></i></a>
+    		</div>
+  		</div>
+	</div>
+<br>
+<br>
 
 <%= yield %>
+
+</div>
 
 </body>
 </html>
