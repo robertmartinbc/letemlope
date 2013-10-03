@@ -1,4 +1,19 @@
 Letemlope::Application.routes.draw do
+
+  get "static_pages/services"
+
+  get "static_pages/for_sale"
+
+  get "static_pages/riders_with_disabilities"
+
+  get "static_pages/show_team"
+
+  get "static_pages/about"
+
+  get "static_pages/contact"
+
+  root to: 'static_pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
