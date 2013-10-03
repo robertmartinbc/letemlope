@@ -7,16 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-	<ul>
-		<li><%= link_to "Home", root_path %></li>
-		<li><%= link_to "Services", static_pages_services_path %></li>
-		<li><%= link_to "For Sale", static_pages_for_sale_path %></li>
-		<li><%= link_to "Riders With Disabilities", static_pages_riders_with_disabilities_path %></li>
-		<li><%= link_to "Show Team", static_pages_show_team_path %></li>
-		<li><%= link_to "About", static_pages_about_path %></li>
-		<li><%= link_to "Contact", static_pages_contact_path %></li>
-	</ul>
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li><%= link_to "Home", root_path %></li>
+			<li><%= link_to "Services", static_pages_services_path %></li>
+			<li><%= link_to "For Sale", static_pages_for_sale_path %></li>
+			<li><%= link_to "Riders With Disabilities", static_pages_riders_with_disabilities_path %></li>
+			<li><%= link_to "Show Team", static_pages_show_team_path %></li>
+			<li><%= link_to "About", static_pages_about_path %></li>
+			<li><%= link_to "Contact", static_pages_contact_path %></li>
+		</ul>
+	</div>
 
 
 <%= yield %>
